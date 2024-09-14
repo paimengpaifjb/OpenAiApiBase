@@ -9,7 +9,7 @@ export default {
       const body = await request.json();
 
       // Check if the request is for GPT-4 or GPT-4-turbo
-      if (body.model === 'gpt-4' || body.model === 'gpt-4-turbo-preview' || body.model === 'gpt-4-vision-preview' || body.model === 'gpt-4-0125-preview' || body.model === 'gpt-4o' || body.model === 'gpt-4-turbo') {
+      if (body.model === 'gpt-4' || body.model === 'gpt-4-turbo-preview' || body.model === 'gpt-4-vision-preview' || body.model === 'gpt-4-0125-preview' || body.model === 'gpt-4o' || body.model === 'gpt-4-turbo' || body.model === 'gpt-3.5-turbo') {
         body.model = 'gpt-4o-mini'; 
       }
 
